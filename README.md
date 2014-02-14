@@ -13,10 +13,10 @@ http://google-maps-utility-library-v3.googlecode.com/svn-history/r172/trunk/arcg
 ##### MapLabel for Google Maps V3
 http://google-maps-utility-library-v3.googlecode.com/svn/trunk/maplabel/docs/reference.html
 
-note this fix on line 120
+Note the z-index fix on line 120
 - panes.mapPane.appendChild(canvas);
 
-to
+Changed to
 - panes.overlayLayer.appendChild(canvas);
 
 See
