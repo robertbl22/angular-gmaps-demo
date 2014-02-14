@@ -5,6 +5,8 @@ A mashup of Angular, Google Maps, and ArcGIS. This demonstrates calling ArcGIS R
 
 The third-party libraries used in this project (such as Google Maps API) are wrapped up as Angular services.
 
+I was unable to get KMZ geometry from ArcGIS to display in Google Maps using the KmlLayer. I tried setting the spatial reference output to EPSG:4326 (see the query string), but no joy. If anyone knows how to get this working, I'd appreciate the input.
+
 #### Notes about the libraries used:
 
 ##### ArcGIS Server Link for Google Maps JavaScript API V3
