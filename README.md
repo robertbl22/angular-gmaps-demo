@@ -15,7 +15,9 @@ http://google-maps-utility-library-v3.googlecode.com/svn/trunk/maplabel/docs/ref
 
 note this fix on line 120
 - panes.mapPane.appendChild(canvas);
+
 to
 - panes.overlayLayer.appendChild(canvas);
+
 See
 http://stackoverflow.com/questions/12714031/google-maps-javascript-api-v3-map-label-and-polygons
