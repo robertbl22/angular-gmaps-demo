@@ -1,7 +1,7 @@
 # Angular GMaps Demo
 
 
-A mashup of Angular, Google Maps, and ArcGIS. This demonstrates calling ArcGIS REST service using **ArcGIS Server Link**, then displaying the returned geometry as points and polygons in Google Maps.
+A mashup of Angular, Google Maps, and ArcGIS. This demonstrates calling ArcGIS REST service using **ArcGIS Server Link**, then displaying the returned geometry as points and polygons in Google Maps. The ArcGIS Esri API is not needed.
 
 Third-party libraries (such as Google Maps API) are wrapped in Angular services.
 
