@@ -3,7 +3,9 @@
 
 A mashup of Angular, Google Maps, and ArcGIS. This demonstrates calling ArcGIS REST service using **ArcGIS Server Link**, then displaying the returned geometry as points and polygons in Google Maps. The ArcGIS Esri API is not needed.
 
-Third-party libraries (such as Google Maps API) are wrapped in Angular services.
+The third-party libraries used in this project (such as Google Maps API) are wrapped up as Angular services.
+
+#### Notes about the libraries used:
 
 ##### ArcGIS Server Link for Google Maps JavaScript API V3
 http://google-maps-utility-library-v3.googlecode.com/svn-history/r172/trunk/arcgislink/docs/reference.html#Feature
