@@ -35,25 +35,18 @@ angular.module('angularGmapsDemoApp')
 			zoom: 5
 		};
 		var map = new GoogleSvc.maps.Map(mapCanvas, mapOptions);
-
 		var counties = data.features;
-
 		var bounds = new GoogleSvc.maps.LatLngBounds();
 
 		angular.forEach(counties, function(county){
-
 			var attrs = county.attributes;
-
 			var polygon = county.geometry[0];
-
 			var polygonBounds = polygon.getBounds();
 			bounds.extend(polygonBounds.getNorthEast());
 			bounds.extend(polygonBounds.getSouthWest());
 			var cntr = polygonBounds.getCenter();
-
 			polygon.setMap(map);
-
-			var mapLabel = new GoogleSvc.MapLabel({
+			new GoogleSvc.MapLabel({
 				text: attrs.NAME,
 				position: cntr,
 				map: map,
@@ -63,10 +56,9 @@ angular.module('angularGmapsDemoApp')
 				strokeColor: '#FF0000',
 				fontColor: '#FFFFFF'
 			});
-
+			GoogleSvc.addPolygonHover(polygon);
 			GoogleSvc.addCountyInfoWindow(map, attrs, cntr, polygon);
 		});
-
 		map.fitBounds(bounds);
 	};
 

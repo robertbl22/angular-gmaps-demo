@@ -23,6 +23,15 @@ angular.module('angularGmapsDemoApp')
 		return bounds;
 	};
 
+	this.addPolygonHover = function(polygon) {
+		this.maps.event.addListener(polygon,'mouseover',function(){
+			this.setOptions({fillColor: '#FF5050'});
+		});
+		this.maps.event.addListener(polygon,'mouseout',function(){
+			this.setOptions({fillColor: '#FF0000'});
+		});
+	};
+
 	this.addOfficeInfoWindow = function(map, itm, marker) {
 		var infowindow = new this.maps.InfoWindow({
 			content: '<strong>' + itm.NAME + '</strong><br/>' + itm.ADDRESS + '<br/>' + itm.CITY + ', GA&nbsp;&nbsp;' + itm.COUNTY_NAME
